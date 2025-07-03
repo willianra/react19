@@ -1,9 +1,9 @@
 export const CardProducto=({item})=>(
-    <div className="text-white" >
-        <h3>{item.nombre}</h3>
-        <p>{item.precio}</p> 
+    <div className="text-white p-4 border rounded-2xl shadows 2xl" >
+        <h3 className="text-xl font-bold">{item.nombre}</h3>
+        <p  className="text-gray-600 ">{item.precio}</p> 
         {
-            item.destacado && <span>desctacado</span>
+            item.destacado && <span className="text-yellow-600 font-semibold">desctacado</span>
         }
     </div>
 );

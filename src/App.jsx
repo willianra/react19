@@ -8,7 +8,7 @@ const App = () => {
    const productos=[
     {nombre:"teclado0",precio:200,destacado:false},
     {nombre:"teclado1",precio:200,destacado:false},
-    {nombre:"teclado2",precio:200,destacado:false},
+    {nombre:"teclado2",precio:200,destacado:true},
     {nombre:"teclado3",precio:200,destacado:false},
     {nombre:"teclado4",precio:200,destacado:false},
     {nombre:"teclado5",precio:200,destacado:false}
@@ -30,11 +30,12 @@ const App = () => {
 
     } 
     <span className="text-white">listar de productos productos </span>
+    <section className=" flex flex-col gap-4">
     {
       productos.map((item3,index)=>(
         <CardProducto key={index} item={item3}/>
       ))
-    }
+    }</section>
    </div>
   
   );
