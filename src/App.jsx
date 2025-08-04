@@ -2,6 +2,7 @@ import    "./App.css"
 import { CardProducto } from "./components/CardProducto"
 import { Contador } from "./components/Contador"
 import {HolaMundo} from "./components/HolaMundo"
+import { MyRoutes } from "./routers/router"
 const App = () => {
    const frutas = ["manzana","bana","pera"]
    const frutas2=["hola","como","estas"]
@@ -14,30 +15,8 @@ const App = () => {
     {nombre:"teclado5",precio:200,destacado:false}
   ]
   return (  
-   <div className="bg-black h-screen"> 
-    <h1 className="bg-red-600 p-4"></h1>
-    <HolaMundo></HolaMundo> 
-    <Contador></Contador>
-    {
-      frutas.map((item,index)=>{
-        const texto="hola"
-        return (<div key={index} className="text-white">
-          {texto+""+index+" "+item}
-        </div>)
-      }) }
-      {
-      frutas2.map((item2,index2)=>(<div  key={index2} className="text-white">{item2}</div>))
-
-    } 
-    <span className="text-white">listar de productos productos </span>
-    <section className=" flex flex-col gap-4">
-    {
-      productos.map((item3,index)=>(
-        <CardProducto key={index} item={item3}/>
-      ))
-    }</section>
-   </div>
-  
+   
+  <MyRoutes/>
   );
 }
 
