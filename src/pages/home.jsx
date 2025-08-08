@@ -1,4 +1,4 @@
-import {CardList} from "../components/CardList" 
+import {CardList} from "../components/CardListold" 
 import { CardList2 } from "../components/CardList2"
  
 export const Home=()=>{

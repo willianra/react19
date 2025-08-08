@@ -1,8 +1,8 @@
 import { Icon } from "@iconify/react/dist/iconify.js"
 import { Link } from "react-router-dom"
 
-export const CardList2 =()=>{
-        const urlImage='https://blog.edutin.com/wp-content/uploads/2024/12/5512-min.webp'
+export const CardList =()=>{
+        const urlImage='https://www.fincacasarejo.com/Docs/Noticias/orpington.jpg'
     const temasTeoria =[
         {title:"useEfect",
          to:"/useeffect"
